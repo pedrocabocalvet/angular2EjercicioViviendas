@@ -1,0 +1,16 @@
+<div class="radiobuttons">
+  <input class="radio" checked type="radio" name="tipo" value="male" (click)="cambioTipo(true)">Alquiler<br>
+  <input class="radio" type="radio" name="tipo" value="female" (click)="cambioTipo(false)">Venta<br>
+</div>
+
+
+<div class="viviendafor" *ngFor="let vivienda of viviendas">
+  <div class="viviendaform" *ngIf="funcionIf(vivienda)">
+    <app-vivienda [direccion]="vivienda.direccion"
+                  [poblacion]="vivienda.poblacion"
+                  [precio]="vivienda.precio"
+                  [alquiler]="vivienda.alquiler"
+                  [foto]="vivienda.foto">
+    </app-vivienda>
+  </div>
+</div>
