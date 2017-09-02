@@ -1,9 +1,28 @@
 .radiobuttons {
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
-    padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+  position: fixed;
+  width: 100%;
+  top: 82px;
+  padding-top: 10px;
+  background: white;
 }
 
 .viviendafor {
     display: inline-block;
+    margin-bottom: 20px;
+}
+
+.viviendas {
+  margin-top: 160px;
+  text-align: center;
+  background: lavenderblush;
+}
+
+.titulo-viviendas {
+    background: gray;
+    line-height: 68px;
+    color: white;
+    font-size: 20px;
 }

@@ -1,12 +1,21 @@
 
-<div class="vivienda" [style.background-image]="backgroundImg" >
+<div [style.width.px]="width"
+     [style.height.px]="height"
+     class="vivienda"
+     [style.background-image]="backgroundImg">
   <p>
-    {{direccion}}
+    {{vivienda.direccion}}
   </p>
   <p>
-     {{poblacion}}
+     {{vivienda.poblacion}}
   </p>
   <p>
-   {{precio}}
+   {{vivienda.precio | currency:'EUR':true}}
   </p>
+</div>
+<div [style.width.px]="width" class="descripcion">
+  <p>Descripción: {{vivienda.descripcion}}</p>
+  <p>Habitaciones:{{vivienda.numhab}}</p>
+  <p>teléfono: {{vivienda.telefono}}</p>
+  <p>correo: {{vivienda.correo}}</p>
 </div>

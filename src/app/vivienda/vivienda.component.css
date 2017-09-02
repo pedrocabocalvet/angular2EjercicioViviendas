@@ -1,10 +1,22 @@
 .vivienda {
-    width: 300px;
-    height: 300px;
+  /*  width: 300px;*/
+  /*  height: 300px; */
     border: 5px blue solid;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
 
 }
+
+.descripcion {
+    background: lavender;
+    width: 300px;
+    margin: -5px 20px 0px 20px;
+    border: 5px blue solid;
+    max-height: 166px;
+}
+
 .vivienda * {
     color: white;
     font-size: 28px;
@@ -12,4 +24,10 @@
     font-weight: bold;
     background: gray;
     margin: 0px;
+}
+
+.descripcion p {
+    text-align: center;
+    color: black;
+    line-height: 10px;
 }

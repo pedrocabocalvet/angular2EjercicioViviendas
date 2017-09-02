@@ -1,8 +1,11 @@
 h1.center {
-    text-align: center;
-    background: lavenderblush;
-    line-height: 80px;
-    color: rebeccapurple;
-    margin-top: 0px;
-    border: 1px solid black;
+  text-align: center;
+  background: lavenderblush;
+  line-height: 80px;
+  color: rebeccapurple;
+  margin-top: 0px;
+  border: 1px solid black;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
+import {Vivienda} from 'clases/vivienda';
 
 @Component({
   selector: 'app-vivienda',
@@ -7,33 +8,25 @@ import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
   styleUrls: ['./vivienda.component.css']
 })
 export class ViviendaComponent implements OnInit {
-  @Input() direccion:string;
-  @Input() poblacion:string;
-  @Input() precio:number;
-  @Input() alquiler:boolean;
-  @Input() foto:string;
+
+ @Input() vivienda: Vivienda;
 
   backgroundImg:any;
-  //name: string = "http://formenterain.com/wp-content/uploads/2017/04/Casa-Casbah-5-300x300.jpg";
-    name: string;
-
+  name: string;
+  width: number= 300;
+  height: number= 300;
 
 
   constructor(private sanitizer:DomSanitizer) {
-  //  this.backgroundImg = sanitizer.bypassSecurityTrustStyle('url('+this.name+')');
-
- }
+  }
 
  putImage(sanitizer:DomSanitizer):void{
    this.backgroundImg = sanitizer.bypassSecurityTrustStyle('url('+this.name+')');
  }
 
-
   ngOnInit() {
-
-    this.name = this.foto;
+    this.name = this.vivienda.foto;
     this.putImage(this.sanitizer);
-
   }
 
 }

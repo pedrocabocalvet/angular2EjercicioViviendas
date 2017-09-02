@@ -1,16 +1,15 @@
 <div class="radiobuttons">
-  <input class="radio" checked type="radio" name="tipo" value="male" (click)="cambioTipo(true)">Alquiler<br>
-  <input class="radio" type="radio" name="tipo" value="female" (click)="cambioTipo(false)">Venta<br>
+  <input class="radio" checked type="radio" name="tipo" value="todos"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Todas las viviendas'">Todas<br>
+  <input class="radio" type="radio" name="tipo" value="true"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Viviendas en Alquiler'">Alquiler<br>
+  <input class="radio" type="radio" name="tipo" value="false"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Viviendas en Venta'">Venta<br>
 </div>
 
-
-<div class="viviendafor" *ngFor="let vivienda of viviendas">
-  <div class="viviendaform" *ngIf="funcionIf(vivienda)">
-    <app-vivienda [direccion]="vivienda.direccion"
-                  [poblacion]="vivienda.poblacion"
-                  [precio]="vivienda.precio"
-                  [alquiler]="vivienda.alquiler"
-                  [foto]="vivienda.foto">
-    </app-vivienda>
+<div class="viviendas">
+  <div class="titulo-viviendas">
+    <h2>{{this.titulo}}</h2>
   </div>
-</div>
+  <div class="viviendafor" *ngFor="let vivienda of viviendas">
+      <app-vivienda [vivienda]="vivienda" *ngIf="showHouse(vivienda)">
+      </app-vivienda>
+  </div>
+<div>
