@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
-import {Vivienda} from 'clases/vivienda';
+import { Vivienda } from './../clases/vivienda';
 
 @Component({
   selector: 'app-vivienda',
