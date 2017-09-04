@@ -10,8 +10,10 @@ import { ModelViviendas } from './../modelos/ModelViviendas';
 })
 export class ForumularioComponent implements OnInit {
 
-  //alquiler: boolean = true;
   alquiler: string = "todos";
+  precioMinimo: string;
+  precioMaximo: string;
+
   titulo: string = "Todas las viviendas";
   viviendas:Vivienda[] = new ModelViviendas().viviendas;
 
@@ -33,6 +35,8 @@ showHouse(vivienda):boolean{
 
 
   ngOnInit() {
+
+    console.log(this.precioMinimo);
   }
 
 }

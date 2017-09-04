@@ -1,4 +1,4 @@
-.radiobuttons {
+.formulario-filtrado {
   padding-bottom: 10px;
   border-bottom: 1px solid black;
   padding-left: 20px;
@@ -25,4 +25,22 @@
     line-height: 68px;
     color: white;
     font-size: 20px;
+}
+
+.inputs-formulario {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.inputs-formulario p {
+  margin: 0px;
+  display: inline-block;
+  width: 100px;
+}
+
+.input-price input {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 80px;
+    text-align: right;
 }
