@@ -1,21 +1,27 @@
-
-<div [style.width.px]="width"
-     [style.height.px]="height"
-     class="vivienda"
-     [style.background-image]="backgroundImg">
-  <p>
-    {{vivienda.direccion}}
-  </p>
-  <p>
-     {{vivienda.poblacion}}
-  </p>
-  <p>
-   {{vivienda.precio | currency:'EUR':true}}
-  </p>
-</div>
-<div [style.width.px]="width" class="descripcion">
-  <p>Descripción: {{vivienda.descripcion}}</p>
-  <p>Habitaciones:{{vivienda.numhab}}</p>
-  <p>teléfono: {{vivienda.telefono}}</p>
-  <p>correo: {{vivienda.correo}}</p>
+<div class="bloquevivienda">
+  <div [style.width.px]="width"
+       [style.height.px]="height"
+       class="vivienda"
+       [style.background-image]="backgroundImg">
+    <p>
+      {{vivienda.direccion}}
+    </p>
+    <p>
+       {{vivienda.poblacion}}
+    </p>
+    <p>
+     {{vivienda.precio | currency:'EUR':true}}
+    </p>
+  </div>
+  <div [style.width.px]="width" class="descripcion">
+    <p>Descripción: {{vivienda.descripcion}}</p>
+    <p>Habitaciones:{{vivienda.numhab}}</p>
+    <p>teléfono: {{vivienda.telefono}}</p>
+    <p>correo: {{vivienda.correo}}</p>
+  </div>
+  <!--
+  <img (click)="vivienda.megusta = !vivienda.megusta" *ngIf="vivienda.megusta" class="likestar" src="./../../assets/megusta2.png" width="50px" height="50px"><img/>
+  <img (click)="vivienda.megusta = !vivienda.megusta" *ngIf="!vivienda.megusta" class="likestar" src="./../../assets/nomegusta2.png" width="50px" height="50px"><img/>
+-->
+<app-likestar [vivienda]="vivienda"></app-likestar>
 </div>

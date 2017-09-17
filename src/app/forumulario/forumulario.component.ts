@@ -11,6 +11,7 @@ import { ModelViviendas } from './../modelos/ModelViviendas';
 export class ForumularioComponent implements OnInit {
 
   alquiler: string = "todos";
+  like: string ="todos";
   precioMinimo: string;
   precioMaximo: string;
 
@@ -28,6 +29,36 @@ showHouse(vivienda):boolean{
       return true;
     }else if(""+vivienda.alquiler != this.alquiler){
       return false;
+    }
+  }
+}
+
+cambiarTitulo(): void{
+  if(this.alquiler == "todos"){
+
+    if(this.like == "todos"){
+      this.titulo = "Todas las viviendas";
+    }else if(this.like == "true"){
+      this.titulo = "Viviendas en favoritos";
+    }else{
+      this.titulo = "Viviendas que no están en favoritos";
+    }
+
+  }else if(this.alquiler == "true"){
+    if(this.like == "todos"){
+      this.titulo = "Todas las viviendas en alquiler";
+    }else if(this.like == "true"){
+      this.titulo = "Viviendas en alquiler y en favoritos";
+    }else{
+      this.titulo = "Viviendas en alquiler que no están en favoritos";
+    }
+  }else{
+    if(this.like == "todos"){
+      this.titulo = "Todas las viviendas en venta";
+    }else if(this.like == "true"){
+      this.titulo = "Viviendas en venta y en favoritos";
+    }else{
+      this.titulo = "Viviendas en venta que no están en favoritos";
     }
   }
 }

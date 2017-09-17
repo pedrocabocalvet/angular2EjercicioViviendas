@@ -1,20 +1,27 @@
 <div class="formulario-filtrado">
   <div class="inputs-formulario">
-    <input class="radio" checked type="radio" name="tipo" value="todos"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Todas las viviendas'">Todas<br>
-    <input class="radio" type="radio" name="tipo" value="true"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Viviendas en Alquiler'">Alquiler<br>
-    <input class="radio" type="radio" name="tipo" value="false"  [(ngModel)]="alquiler" (ngModelChange)="titulo='Viviendas en Venta'">Venta<br>
+    <input class="radio" checked type="radio" name="tipo" value="todos"  [(ngModel)]="alquiler" (ngModelChange)="cambiarTitulo()">Todas<br>
+    <input class="radio" type="radio" name="tipo" value="true"  [(ngModel)]="alquiler" (ngModelChange)="cambiarTitulo()">Alquiler<br>
+    <input class="radio" type="radio" name="tipo" value="false"  [(ngModel)]="alquiler" (ngModelChange)="cambiarTitulo()">Venta<br>
+  </div>
+  <div class="inputs-formulario">
+    <input class="radio" checked type="radio" name="like" value="todos"  [(ngModel)]="like" (ngModelChange)="cambiarTitulo()">Todas<br>
+    <input class="radio" type="radio" name="like" value="true"  [(ngModel)]="like" (ngModelChange)="cambiarTitulo()">favoritos<br>
+    <input class="radio" type="radio" name="like" value="false"  [(ngModel)]="like" (ngModelChange)="cambiarTitulo()">no favoritos<br>
   </div>
   <div class="inputs-formulario input-price">
     <p>Precio Mínimo</p><input type="text" [(ngModel)]="precioMinimo"> €<br>
     <p>Precio Máximo</p><input type="text" [(ngModel)]="precioMaximo"> €
   </div>
+
 </div>
+
 
 <div class="viviendas">
   <div class="titulo-viviendas">
     <h2>{{this.titulo}}</h2>
   </div>
-  <div class="viviendafor" *ngFor="let vivienda of viviendas | filtro_precio:precioMinimo:precioMaximo">
+  <div class="viviendafor" *ngFor="let vivienda of viviendas | filtro_precio:precioMinimo:precioMaximo:like ">
       <app-vivienda [vivienda]="vivienda" *ngIf="showHouse(vivienda)">
       </app-vivienda>
   </div>

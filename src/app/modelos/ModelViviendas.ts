@@ -13,6 +13,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962745874",
     correo: "benitocamelas@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mostoles",
@@ -24,6 +25,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962755574",
     correo: "evafinasegura@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle rioja",
@@ -35,6 +37,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "968885874",
     correo: "jhonsnow@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle meliana",
@@ -46,6 +49,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "962745222",
     correo: "espartaco@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle benidorm",
@@ -57,6 +61,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962748774",
     correo: "majareta@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle ponferrada",
@@ -68,6 +73,7 @@ viviendas: Vivienda[] = [
     numhab: 5,
     telefono: "961115874",
     correo: "frodobolson@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle ferrol",
@@ -79,6 +85,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962733374",
     correo: "marea@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle flexo",
@@ -90,6 +97,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962745874",
     correo: "benitocamelas@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle chicago",
@@ -101,6 +109,7 @@ viviendas: Vivienda[] = [
     numhab: 1,
     telefono: "962755574",
     correo: "evafinasegura@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mirador",
@@ -112,6 +121,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "968885874",
     correo: "jhonsnow@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mallorca",
@@ -123,6 +133,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "962745222",
     correo: "espartaco@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle guay",
@@ -134,6 +145,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962748774",
     correo: "majareta@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle truño",
@@ -145,6 +157,7 @@ viviendas: Vivienda[] = [
     numhab: 5,
     telefono: "961115874",
     correo: "frodobolson@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle rioja",
@@ -156,6 +169,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962733374",
     correo: "marea@gmail.com",
+    megusta: false,
   },
 
   {
@@ -168,6 +182,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962745874",
     correo: "benitocamelas@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mostoles",
@@ -179,6 +194,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962755574",
     correo: "evafinasegura@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle rioja",
@@ -190,6 +206,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "968885874",
     correo: "jhonsnow@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle meliana",
@@ -201,6 +218,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "962745222",
     correo: "espartaco@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle benidorm",
@@ -212,6 +230,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962748774",
     correo: "majareta@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle ponferrada",
@@ -223,6 +242,7 @@ viviendas: Vivienda[] = [
     numhab: 5,
     telefono: "961115874",
     correo: "frodobolson@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle ferrol",
@@ -234,6 +254,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962733374",
     correo: "marea@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle flexo",
@@ -245,6 +266,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962745874",
     correo: "benitocamelas@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle chicago",
@@ -256,6 +278,7 @@ viviendas: Vivienda[] = [
     numhab: 1,
     telefono: "962755574",
     correo: "evafinasegura@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mirador",
@@ -267,6 +290,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "968885874",
     correo: "jhonsnow@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle mallorca",
@@ -278,6 +302,7 @@ viviendas: Vivienda[] = [
     numhab: 4,
     telefono: "962745222",
     correo: "espartaco@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle guay",
@@ -289,6 +314,7 @@ viviendas: Vivienda[] = [
     numhab: 2,
     telefono: "962748774",
     correo: "majareta@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle truño",
@@ -300,6 +326,7 @@ viviendas: Vivienda[] = [
     numhab: 5,
     telefono: "961115874",
     correo: "frodobolson@gmail.com",
+    megusta: false,
   },
   {
     direccion: "calle rioja",
@@ -311,6 +338,7 @@ viviendas: Vivienda[] = [
     numhab: 3,
     telefono: "962733374",
     correo: "marea@gmail.com",
+    megusta: false,
   },
 
 ];

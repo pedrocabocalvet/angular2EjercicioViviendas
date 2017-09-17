@@ -9,5 +9,5 @@ export interface Vivienda {
   numhab: number;
   telefono: string;
   correo: string;
-
+  megusta: boolean;
 }

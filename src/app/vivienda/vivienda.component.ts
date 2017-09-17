@@ -28,5 +28,9 @@ export class ViviendaComponent implements OnInit {
     this.name = this.vivienda.foto;
     this.putImage(this.sanitizer);
   }
+  changeLike(): void{
+    console.log("clickas");
+    
+  }
 
 }
